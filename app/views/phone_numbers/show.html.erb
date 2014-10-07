@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person ID:</strong>
+  <%= @phone_number.person_id %>
+</p>
+
+<% if @phone_number.person %>
+  <p>
+    <strong>Person:</strong>
+    <%= link_to @phone_number.person, @phone_number.person %>
+  </p>
+<% end %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @phone_number.name %>
+</p>
+
+<p>
+  <strong>Country code:</strong>
+  <%= @phone_number.country_code %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @phone_number.number %>
+</p>
+
+<%= link_to 'Edit', edit_phone_number_path(@phone_number) %> |
+<%= link_to 'Back', phone_numbers_path %>
