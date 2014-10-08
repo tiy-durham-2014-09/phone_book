@@ -44,3 +44,5 @@ gem 'binding_of_caller'
 # gem 'bourbon'
 # gem 'neat'
 gem 'foundation-rails', '~> 5.4.5'
+
+gem 'faker'
